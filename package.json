@@ -1,0 +1,25 @@
+{
+  "name": "wordpress-wp-theme",
+  "version": "1.0.0",
+  "description": "A simple Wordpress starter theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "author": "Jonathan Mällberg",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {}
+}

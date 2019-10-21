@@ -1,0 +1,74 @@
+/*
+Theme Name: Wordpress Starter
+Theme URI:
+Author: Jonathan Mällberg
+Author URI:
+Description: Wordpress starter theme
+Version: 1.0.0
+License:
+License URI:
+Text Domain:
+Tags:
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Vendor
+	# Normalize
+# Utils
+	# Extends
+	# Functions
+	# Includes
+	# Mixins
+# Base
+	# Buttons
+	# Colors
+	# Forms
+	# Global styles
+	# Resets
+	# Typography
+	# Variables
+# Components
+	#
+# Layout
+	# Footer
+	# Header
+# Pages
+	# 404 Error
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+Vendor
+--------------------------------------------------------------*/
+@import "vendor/normalize";
+@import "vendor/wpcore";
+/*--------------------------------------------------------------
+Utils
+--------------------------------------------------------------*/
+@import "utils/extends";
+@import "utils/functions";
+@import "utils/includes";
+@import "utils/mixins";
+/*--------------------------------------------------------------
+Base
+--------------------------------------------------------------*/
+@import "base/colors";
+@import "base/variables";
+@import "base/buttons";
+@import "base/forms";
+@import "base/global";
+@import "base/resets";
+@import "base/typography";
+/*--------------------------------------------------------------
+Components
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+@import "layout/header";
+@import "layout/footer";
+/*--------------------------------------------------------------
+Pages
+--------------------------------------------------------------*/
+@import "pages/error-404";

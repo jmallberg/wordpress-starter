@@ -1,0 +1,8 @@
+/*--------------------------------------------------------------
+# Utils - Functions
+--------------------------------------------------------------*/
+
+// Get color with just color name
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}

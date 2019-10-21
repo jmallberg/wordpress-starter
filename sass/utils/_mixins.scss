@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Utils - Mixins
+--------------------------------------------------------------*/
+
+@mixin bp($point) {
+    @if $point == small-mobile {
+        @media (min-width: 320px) { @content; }
+    }
+    @else if $point == medium-mobile {
+        @media (min-width: 360px) { @content; }
+    }
+    @else if $point == large-mobile {
+        @media (min-width: 410px)  { @content; }
+    }
+    @else if $point == small-tablet {
+        @media (min-width: 600px)  { @content; }
+    }
+    @else if $point == medium-tablet {
+        @media (min-width: 768px)  { @content; }
+    }
+    @else if $point == large-tablet {
+        @media (min-width: 1024px)  { @content; }
+    }
+    @else if $point == xsmall-desktop {
+        @media (min-width: 1280px)  { @content; }
+    }
+    @else if $point == small-desktop {
+        @media (min-width: 1366px)  { @content; }
+    }
+    @else if $point == smallm-desktop {
+        @media (min-width: 1440px)  { @content; }
+    }
+    @else if $point == medium-desktop {
+        @media (min-width: 1600px)  { @content; }
+    }
+    @else if $point == large-desktop {
+        @media (min-width: 1920px)  { @content; }
+    }
+    @else if $point == xlarge-desktop {
+        @media (min-width: 2200px)  { @content; }
+    }
+}
+
+// * Use through an include
+// * @include bp(small-desktop) {
+// *    width: 100%;
+// * }
+
+// TODO: Test this.

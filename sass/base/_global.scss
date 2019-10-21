@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------
+# Base - Global styles
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: white; /* Fallback for when there is no custom background color defined. */
+	font-family: 'Open Sans',sans-serif;
+}
+
+hr {
+	background-color: grey;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+img {
+    height: auto; /* Make sure images are scaled correctly. */
+    width: 100%;
+	max-width: 100%; /* Adhere to container width. */
+}
+
+// LINKS ------------------------
+
+a {
+	color: color(primary);
+
+	&:visited {
+		color: color(primary-dark);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: color(primary-light);
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+// LISTS ------------------------
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+// TABLES ------------------------
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+// EMBEDS AND IFRAMES ------------------------
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+// Div's
+div.main-container {
+	padding: 5px 15px;
+	max-width: 1370px;
+    width: 100%;
+	margin: auto;
+	@include bp(medium-tablet) {
+		padding: 5px 20px;
+	}	
+}

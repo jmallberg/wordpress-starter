@@ -1,0 +1,12 @@
+div.error-404-wrapper {
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        max-width: 580px;
+    }
+}
